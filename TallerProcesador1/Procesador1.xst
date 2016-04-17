@@ -1,6 +1,9 @@
-set -tmpdir "G:/procesador/procesador1/Procesador/TallerProcesador1/xst/projnav.tmp"
-set -xsthdpdir "G:/procesador/procesador1/Procesador/TallerProcesador1/xst"
-run -compileonly yes
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn Procesador1.prj
+-ofn Procesador1
+-ofmt NGC
 -p xc7a100t-3-csg324
 -top Procesador1
 -opt_mode Speed
@@ -47,4 +50,3 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn Procesador1.prj

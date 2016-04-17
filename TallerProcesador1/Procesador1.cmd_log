@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador1/Procesador1.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador1/Procesador1.syr" 
+xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador1/Procesador1.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador1/Procesador1.syr" 
+xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador1/Procesador1.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador1/Procesador1.syr" 
+xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador1/Procesador1.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador1/Procesador1.syr" 
