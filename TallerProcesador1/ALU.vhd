@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -38,24 +39,26 @@ end ALU;
 
 architecture arqALU of ALU is
 	begin
-	process(operando1,operando2,aluOP,carry)
+	process(operando1,operando2,aluOP)
 	begin
 	   case (aluOP) is 
 			when "000000" => -- add
 				AluResult <= operando1 + operando2;
-			when "000001" => -- addcc
-				AluResult <= operando1 + operando2;
-			when "000010" => --addx
-				AluResult <= operando1 + operando2;
-			when "000100" => --and
-				AluResult <= operando1 and operando2;
 			when "001000" => -- or
 				AluResult <= operando1 or operando2;
 			when "010000" => -- sub
 				AluResult <= operando1 - operando2;
-			when "000101" => -- subcc
-				AluResult <= operando1 - operando2;
-			when others => -- Cae el nop
+			when "000001" => -- and
+				AluResult <= operando1 and operando2;
+			when "010011" => -- xor
+				AluResult <= operando1 xor operando2;
+			when "000111" => -- xnor
+				AluResult <= operando1 xnor operando2;
+			when "000101" => -- andn
+				AluResult <= not(operando1 and operando2);
+			when "000110" => -- orn
+				AluResult <= not(operando1 or operando2);
+			when others => -- otras instrucciones
 				AluResult <= (others=>'0');
 		end case;
 	end process;
