@@ -30,15 +30,36 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity ALU is
-    Port ( op1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           op2 : in  STD_LOGIC_VECTOR (31 downto 0);
+ Port ( operando1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           operando2 : in  STD_LOGIC_VECTOR (31 downto 0);
            aluOP : in  STD_LOGIC_VECTOR (5 downto 0);
            AluResult : out  STD_LOGIC_VECTOR (31 downto 0));
 end ALU;
 
 architecture arqALU of ALU is
 
-begin
+	process(operando1,operando2,aluOP,carry)
+	begin
+	   case (aluOP) is 
+			when "000000" => -- add
+				AluResult <= operando1 + operando2;
+			when "000001" => -- addcc
+				AluResult <= operando1 + operando2;
+			when "000010" => --addx
+				AluResult <= operando1 + operando2;
+			when "000100" => --and
+				AluResult <= operando1 and operando2;
+			when "001000" => -- or
+				AluResult <= operando1 or operando2;
+			when "010000" => -- sub
+				AluResult <= operando1 - operando2;
+			when "000101" => -- subcc
+				AluResult <= operando1 - operando2;
+			when others => -- Cae el nop
+				AluResult <= (others=>'0');
+		end case;
+	end process;
+
 
 
 end arqALU;

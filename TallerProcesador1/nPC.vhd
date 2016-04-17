@@ -39,6 +39,16 @@ end nPC;
 architecture arqNPC of nPC is
 
 begin
+process(clkFPGA, address, reset)
+	begin
+		if(reset = '1')then
+			nextInstruction <= (others=>'0');
+		else
+			if(rising_edge(clkFPGA))then
+				nextInstruction <= address;
+			end if;
+		end if;
+	end process;
 
 
 end arqNPC;

@@ -35,7 +35,16 @@ end PC;
 architecture arqPC of PC is
 
 begin
-
+process(clkFPGA)
+	begin
+		if(rising_edge(clkFPGA))then
+			if(reset = '1')then
+				nextInstruction <= (others=>'0');
+			else
+				nextInstruction <= address;
+			end if;
+		end if;
+	end process;
 
 end arqPC;
 
