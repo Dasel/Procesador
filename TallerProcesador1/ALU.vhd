@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity ALU is
- Port ( operando1 : in  STD_LOGIC_VECTOR (31 downto 0);
+ Port ( 	  operando1 : in  STD_LOGIC_VECTOR (31 downto 0);
            operando2 : in  STD_LOGIC_VECTOR (31 downto 0);
            aluOP : in  STD_LOGIC_VECTOR (5 downto 0);
            AluResult : out  STD_LOGIC_VECTOR (31 downto 0));

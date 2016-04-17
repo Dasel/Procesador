@@ -21,15 +21,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 
 entity Procesador1 is
 	Port ( 
@@ -38,13 +29,12 @@ entity Procesador1 is
 				procesorResult : inout  STD_LOGIC_VECTOR (31 downto 0));
 end Procesador1;
 
-
 architecture Behavioral of Procesador1 is
 
 component adder 
-		Port ( op1 : in  STD_LOGIC_VECTOR (31 downto 0);
-				 op2 : in  STD_LOGIC_VECTOR (31 downto 0);
-				 resultado : out  STD_LOGIC_VECTOR (31 downto 0));
+    Port ( operand1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           operand2 : in  STD_LOGIC_VECTOR (31 downto 0);
+           resultado : out  STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
 component PC 
@@ -63,12 +53,13 @@ end component;
 
 component instructionMemory 
     Port ( 
+			  --clk : in STD_LOGIC;
 			  address : in  STD_LOGIC_VECTOR (31 downto 0);
            reset : in  STD_LOGIC;
            outInstruction : out  STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
-component registerfile 
+component registerFile 
     Port ( --clkFPGA : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            registerSource1 : in  STD_LOGIC_VECTOR (4 downto 0);
@@ -94,7 +85,6 @@ component ALU
     Port ( operando1 : in  STD_LOGIC_VECTOR (31 downto 0);
            operando2 : in  STD_LOGIC_VECTOR (31 downto 0);
            aluOP : in  STD_LOGIC_VECTOR (5 downto 0);
-
            AluResult : out  STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
@@ -120,27 +110,27 @@ end component;
 	
 	
 	
-	adder: adder PORT MAP(
+	my_adder: adder PORT MAP(
 		operand1 =>auxPc,
 		operand2 => "00000000000000000000000000000001",
 		resultado => auxnPc
 	);
 	
-	nPC: nPC PORT MAP(
+	my_nPC: nPC PORT MAP(
 		address => auxnPc,
 		reset => rst,
 		clkFPGA => clk,
 		nextInstruction => auxPC 
 	);
 
-	PC: PC PORT MAP(
+	my_PC: PC PORT MAP(
 		address => auxPC,
 		reset => rst,
 		clkFPGA => clk,
 		nextInstruction => auxInstMem
 	);
 	
-	instructionMemory: instructionMemory PORT MAP(
+	my_instructionMemory: instructionMemory PORT MAP(
 		address => auxInstMem,
 		reset => rst,
 		outInstruction =>auxRegFile 
@@ -148,7 +138,7 @@ end component;
 	
 
 	
-	registerfile: registerfile PORT MAP(
+	my_registerfile: registerfile PORT MAP(
 		reset => rst,
 		registerSource1 => auxRegFile(18 downto 14),
 		registerSource2 => auxRegFile(4 downto 0),
@@ -159,7 +149,7 @@ end component;
 		contentRegisterSource2 => auxCrs2);
 		--contentRegisterDestination => auxCrd
 	
-	unidadControl: unidadControl PORT MAP(
+	my_unidadControl: unidadControl PORT MAP(
 		op => auxRegFile(31 downto 30),
 		op3 => auxRegFile(24 downto 19),
 		--wren => auxwrEnRf,
@@ -169,7 +159,7 @@ end component;
 	
 	
 	
-	ALU: ALU PORT MAP(
+	my_ALU: ALU PORT MAP(
 		operando1 => auxCrs1,
 		operando2 => auxCrs2,
 		aluOP => auxAlu,
@@ -180,6 +170,4 @@ end component;
 
 
 end Behavioral;
-
-
 
