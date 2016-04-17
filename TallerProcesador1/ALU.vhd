@@ -37,7 +37,7 @@ entity ALU is
 end ALU;
 
 architecture arqALU of ALU is
-
+	begin
 	process(operando1,operando2,aluOP,carry)
 	begin
 	   case (aluOP) is 

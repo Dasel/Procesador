@@ -21,7 +21,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -49,7 +48,8 @@ architecture arqRF of registerfile is
 
 	type ram_type is array (0 to 39) of std_logic_vector (31 downto 0);
 	signal registers : ram_type :=(others => x"00000000");
-
+	
+   begin
 	process(reset,registerSource1,registerSource2,registerDestination,writeEnable,dataToWrite)--clkFPGA)
 	begin
 		--if(rising_edge(clkFPGA))then
@@ -66,7 +66,6 @@ architecture arqRF of registerfile is
 					registers(conv_integer(registerDestination)) <= dataToWrite;
 				end if;
 			end if;
-		--end if;
 	end process;
 
 end arqRF;
