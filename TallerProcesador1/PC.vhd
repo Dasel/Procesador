@@ -30,6 +30,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity PC is
+    Port ( address : in  STD_LOGIC_VECTOR (31 downto 0);
+           clkFPGA : in  STD_LOGIC;
+			  reset : in  STD_LOGIC;
+           nextInstruction : out  STD_LOGIC_VECTOR (31 downto 0));
 end PC;
 
 architecture arqPC of PC is

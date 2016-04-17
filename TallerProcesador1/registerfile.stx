@@ -42,14 +42,16 @@ TABLE OF CONTENTS
 Parsing VHDL file "G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd" into library work
 Parsing entity <registerfile>.
 Parsing architecture <arqRF> of entity <registerfile>.
-ERROR:HDLCompiler:69 - "G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd" Line 59: <contentregisterdestination> is not declared.
-ERROR:HDLCompiler:854 - "G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd" Line 46: Unit <arqrf> ignored due to previous errors.
-VHDL file G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd ignored due to errors
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.23 secs
+ 
 --> 
 
-Total memory usage is 216032 kilobytes
+Total memory usage is 216352 kilobytes
 
-Number of errors   :    2 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

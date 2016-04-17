@@ -68,7 +68,7 @@ component instructionMemory
            outInstruction : out  STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
-component registerFile 
+component registerfile 
     Port ( --clkFPGA : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            registerSource1 : in  STD_LOGIC_VECTOR (4 downto 0);
