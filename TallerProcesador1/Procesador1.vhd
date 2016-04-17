@@ -120,27 +120,27 @@ end component;
 	
 	
 	
-	Inst_adder: adder PORT MAP(
+	adder: adder PORT MAP(
 		operand1 =>auxPc,
 		operand2 => "00000000000000000000000000000001",
 		resultado => auxnPc
 	);
 	
-	Inst_nPC: nPC PORT MAP(
+	nPC: nPC PORT MAP(
 		address => auxnPc,
 		reset => rst,
 		clkFPGA => clk,
 		nextInstruction => auxPC 
 	);
 
-	Inst_PC: PC PORT MAP(
+	PC: PC PORT MAP(
 		address => auxPC,
 		reset => rst,
 		clkFPGA => clk,
 		nextInstruction => auxInstMem
 	);
 	
-	Inst_instructionMemory: instructionMemory PORT MAP(
+	instructionMemory: instructionMemory PORT MAP(
 		address => auxInstMem,
 		reset => rst,
 		outInstruction =>auxRegFile 
@@ -148,7 +148,7 @@ end component;
 	
 
 	
-	Inst_registerfile: registerfile PORT MAP(
+	registerfile: registerfile PORT MAP(
 		reset => rst,
 		registerSource1 => auxRegFile(18 downto 14),
 		registerSource2 => auxRegFile(4 downto 0),
@@ -159,7 +159,7 @@ end component;
 		contentRegisterSource2 => auxCrs2);
 		--contentRegisterDestination => auxCrd
 	
-	Inst_unidadControl: unidadControl PORT MAP(
+	unidadControl: unidadControl PORT MAP(
 		op => auxRegFile(31 downto 30),
 		op3 => auxRegFile(24 downto 19),
 		--wren => auxwrEnRf,
@@ -169,7 +169,7 @@ end component;
 	
 	
 	
-	Inst_ALU: ALU PORT MAP(
+	ALU: ALU PORT MAP(
 		operando1 => auxCrs1,
 		operando2 => auxCrs2,
 		aluOP => auxAlu,
