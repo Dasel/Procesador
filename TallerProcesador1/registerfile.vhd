@@ -30,12 +30,22 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity registerfile is
+	Port ( --clkFPGA : in  STD_LOGIC;
+				  reset : in  STD_LOGIC;
+				  registerSource1 : in  STD_LOGIC_VECTOR (4 downto 0);
+				  registerSource2 : in  STD_LOGIC_VECTOR (4 downto 0);
+				  registerDestination : in  STD_LOGIC_VECTOR (4 downto 0);
+				  --writeEnable : in  STD_LOGIC;
+				  dataToWrite : in STD_LOGIC_VECTOR (31 downto 0);
+				  contentRegisterSource1 : out  STD_LOGIC_VECTOR (31 downto 0);
+				  contentRegisterSource2 : out  STD_LOGIC_VECTOR (31 downto 0));
+				  --contentRegisterDestination : out  STD_LOGIC_VECTOR (31 downto 0));
 end registerfile;
 
-architecture Behavioral of registerfile is
+architecture arqRF of registerfile is
 
 begin
 
 
-end Behavioral;
+end arqRF;
 

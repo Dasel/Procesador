@@ -30,12 +30,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity ALU is
+    Port ( op1 : in  STD_LOGIC_VECTOR (31 downto 0);
+           op2 : in  STD_LOGIC_VECTOR (31 downto 0);
+           aluOP : in  STD_LOGIC_VECTOR (5 downto 0);
+           AluResult : out  STD_LOGIC_VECTOR (31 downto 0));
 end ALU;
 
-architecture Behavioral of ALU is
+architecture arqALU of ALU is
 
 begin
 
 
-end Behavioral;
+end arqALU;
 

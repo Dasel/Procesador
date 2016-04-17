@@ -32,10 +32,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity PC is
 end PC;
 
-architecture Behavioral of PC is
+architecture arqPC of PC is
 
 begin
 
 
-end Behavioral;
+end arqPC;
 

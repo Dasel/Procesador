@@ -41,9 +41,9 @@ end Procesador1;
 architecture Behavioral of Procesador1 is
 
 component adder 
-    Port ( operand1 : in  STD_LOGIC_VECTOR (31 downto 0);
-           operand2 : in  STD_LOGIC_VECTOR (31 downto 0);
-           resultado : out  STD_LOGIC_VECTOR (31 downto 0));
+		Port ( op1 : in  STD_LOGIC_VECTOR (31 downto 0);
+				 op2 : in  STD_LOGIC_VECTOR (31 downto 0);
+				 resultado : out  STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
 component PC 
@@ -62,7 +62,6 @@ end component;
 
 component instructionMemory 
     Port ( 
-			  --clk : in STD_LOGIC;
 			  address : in  STD_LOGIC_VECTOR (31 downto 0);
            reset : in  STD_LOGIC;
            outInstruction : out  STD_LOGIC_VECTOR (31 downto 0));

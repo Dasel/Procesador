@@ -30,12 +30,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity nPC is
+     Port ( address : in  STD_LOGIC_VECTOR (31 downto 0);
+			  reset : in  STD_LOGIC;
+           clkFPGA : in  STD_LOGIC;
+           nextInstruction : out  STD_LOGIC_VECTOR (31 downto 0));
 end nPC;
 
-architecture Behavioral of nPC is
+architecture arqNPC of nPC is
 
 begin
 
 
-end Behavioral;
+end arqNPC;
 

@@ -30,12 +30,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity instructionMemory is
+		Port ( 
+			  address : in  STD_LOGIC_VECTOR (31 downto 0);
+           reset : in  STD_LOGIC;
+           outInstruction : out  STD_LOGIC_VECTOR (31 downto 0));
 end instructionMemory;
 
-architecture Behavioral of instructionMemory is
+architecture arqIM of instructionMemory is
 
 begin
 
 
-end Behavioral;
+end arqIM;
 
