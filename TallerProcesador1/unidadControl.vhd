@@ -53,7 +53,15 @@ begin
 							when "001000" => -- or
 								ALUOP <= "001000";
 							when "010000" => -- sub
-								ALUOP <= "010000";							
+								ALUOP <= "010000";
+							when "010011" => -- xor
+								ALUOP <= "010011";
+							when "000111" => -- xnor
+								ALUOP <= "000111";
+							when "000101" => -- andn
+								ALUOP <= "000101";
+							when "000110" => -- orn
+								ALUOP <= "000110";								
 							when others => -- Cae el nop
 								ALUOP <= (others=>'0');						
 						end case;
