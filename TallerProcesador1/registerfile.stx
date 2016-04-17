@@ -12,7 +12,7 @@ Total CPU time to Xst completion: 0.07 secs
 Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.07 secs
  
---> Reading design: unidadControl.prj
+--> Reading design: registerfile.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -39,19 +39,21 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "G:\procesador\procesador1\Procesador\TallerProcesador1\unidadControl.vhd" into library work
-Parsing entity <unidadControl>.
-Parsing architecture <arqUC> of entity <unidadcontrol>.
-
-
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.49 secs
- 
+Parsing VHDL file "G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd" into library work
+Parsing entity <registerfile>.
+Parsing architecture <arqRF> of entity <registerfile>.
+ERROR:HDLCompiler:806 - "G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd" Line 53: Syntax error near "process".
+ERROR:HDLCompiler:806 - "G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd" Line 56: Syntax error near "then".
+ERROR:HDLCompiler:69 - "G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd" Line 59: <contentregisterdestination> is not declared.
+ERROR:HDLCompiler:806 - "G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd" Line 61: Syntax error near "else".
+ERROR:HDLCompiler:806 - "G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd" Line 64: Syntax error near "if".
+ERROR:HDLCompiler:806 - "G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd" Line 66: Syntax error near "if".
+VHDL file G:\procesador\procesador1\Procesador\TallerProcesador1\registerfile.vhd ignored due to errors
 --> 
 
-Total memory usage is 215776 kilobytes
+Total memory usage is 216608 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :    6 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -29,35 +29,35 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+
+
 entity unidadControl is
-    Port ( 
+    Port ( --clk : in STD_LOGIC;
 			  op : in  STD_LOGIC_VECTOR (1 downto 0);
            op3 : in  STD_LOGIC_VECTOR (5 downto 0);
-           aluOP : in  STD_LOGIC_VECTOR (5 downto 0));
+			  --wren : out std_logic;
+           ALUOP : out  STD_LOGIC_VECTOR (5 downto 0));
 end unidadControl;
 
 architecture arqUC of unidadControl is
+
+begin
 	process(op,op3)
 	begin
-			if(op = "10")then				
+					if(op = "10")then				
 						case op3 is
 							when "000000" => -- add
-								aluOP <= op;
-								--wren <= '1';								
+								ALUOP <= "000000";				
 							when "000100" => --and
-								aluOP <= op;
-								--wren <= '1';
+								ALUOP <= "000100";
 							when "001000" => -- or
-								aluOP <= op;
-								--wren <= '1';
+								ALUOP <= "001000";
 							when "010000" => -- sub
-								aluOP <= op;
-								--wren <= '1';
-
+								ALUOP <= "010000";							
 							when others => -- Cae el nop
-								aluOP <= (others=>'0');
+								ALUOP <= (others=>'0');						
 						end case;
-				else 
+					else 
 						ALUOP <= (others=>'0');
 					end if;
 	end process;

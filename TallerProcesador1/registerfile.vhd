@@ -19,6 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -48,26 +50,24 @@ architecture arqRF of registerfile is
 	type ram_type is array (0 to 39) of std_logic_vector (31 downto 0);
 	signal registers : ram_type :=(others => x"00000000");
 
+	process(reset,registerSource1,registerSource2,registerDestination,writeEnable,dataToWrite)--clkFPGA)
 	begin
-	--,reset,registerSource1,registerSource2,registerDestination,writeEnable,dataToWrite
-		process(reset,registerSource1,registerSource2,registerDestination,writeEnable,dataToWrite)--clkFPGA)
-		begin
-			--if(rising_edge(clkFPGA))then
-				if(reset = '1')then
-					contentRegisterSource1 <= (others=>'0');
-					contentRegisterSource2 <= (others=>'0');
-					contentRegisterDestination <= (others=>'0');
-					registers <= (others => x"00000000");
-				else
-					contentRegisterSource1 <= registers(conv_integer(registerSource1));
-					contentRegisterSource2 <= registers(conv_integer(registerSource2));
-					contentRegisterDestination <= registers(conv_integer(registerDestination));
-					if(writeEnable = '1' and registerDestination /= "000000")then
-						registers(conv_integer(registerDestination)) <= dataToWrite;
-					end if;
+		--if(rising_edge(clkFPGA))then
+			if(reset = '1')then
+				contentRegisterSource1 <= (others=>'0');
+				contentRegisterSource2 <= (others=>'0');
+				contentRegisterDestination <= (others=>'0');
+				registers <= (others => x"00000000");
+			else
+				contentRegisterSource1 <= registers(conv_integer(registerSource1));
+				contentRegisterSource2 <= registers(conv_integer(registerSource2));
+				contentRegisterDestination <= registers(conv_integer(registerDestination));
+				if(registerDestination /= "000000")then
+					registers(conv_integer(registerDestination)) <= dataToWrite;
 				end if;
-			--end if;
-		end process;
+			end if;
+		--end if;
+	end process;
 
 end arqRF;
 
