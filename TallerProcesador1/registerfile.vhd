@@ -50,9 +50,9 @@ architecture arqRF of registerfile is
 	signal registers : ram_type :=(others => x"00000000");
 	
    begin
-	process(reset,registerSource1,registerSource2,registerDestination,writeEnable,dataToWrite)--clkFPGA)
+	process(reset,registerSource1,registerSource2,registerDestination,dataToWrite)--clkFPGA)
 	begin
-		--if(rising_edge(clkFPGA))then
+		--if(rising_edge(clkFPGA))then se quito writeenable y contentRegisterDestination
 			if(reset = '1')then
 				contentRegisterSource1 <= (others=>'0');
 				contentRegisterSource2 <= (others=>'0');
@@ -61,7 +61,6 @@ architecture arqRF of registerfile is
 			else
 				contentRegisterSource1 <= registers(conv_integer(registerSource1));
 				contentRegisterSource2 <= registers(conv_integer(registerSource2));
-				contentRegisterDestination <= registers(conv_integer(registerDestination));
 				if(registerDestination /= "000000")then
 					registers(conv_integer(registerDestination)) <= dataToWrite;
 				end if;
