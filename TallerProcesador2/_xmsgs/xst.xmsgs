@@ -5,14 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="1030" delta="new" >"G:\procesador\procesador1\Procesador\TallerProcesador2\instructionMemory.vhd" Line 46: Cannot open file &apos;<arg fmt="%s" index="1">testJMPL.data</arg>&apos;.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="92" delta="new" >"G:\procesador\procesador1\Procesador\TallerProcesador2\registerfile.vhd" Line 66: <arg fmt="%s" index="1">registers</arg> should be on the sensitivity list of the process
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="92" delta="new" >"G:\procesador\procesador1\Procesador\TallerProcesador2\registerfile.vhd" Line 67: <arg fmt="%s" index="1">registers</arg> should be on the sensitivity list of the process
-</msg>
-
 </messages>
 

@@ -88,7 +88,12 @@ component ALU
            AluResult : out  STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
-
+component muxALU 
+     Port ( Crs2 : in  STD_LOGIC_VECTOR (31 downto 0);
+           SEUOperando : in  STD_LOGIC_VECTOR (31 downto 0);
+           selImmediate : in  STD_LOGIC;
+           OperandoALU : out  STD_LOGIC_VECTOR (31 downto 0));
+end component;
 	
 	signal auxPC : std_logic_vector(31 downto 0);
 	signal auxnPC : std_logic_vector(31 downto 0);
@@ -166,8 +171,15 @@ end component;
 		AluResult => auxDwr
 	);
 	
+
+	
+	my_muxALU: muxALU PORT MAP(
+		Crs2 => auxCrs2,
+		SEUOperando => auxSeuMux,
+		selImmediate => auxRegFile(13),
+		OperandoALU => auxMuxAlu
+	);
+
 	procesorResult <= auxDwr;
-
-
 end Behavioral;
 
