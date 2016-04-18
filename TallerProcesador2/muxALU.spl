@@ -1,0 +1,7 @@
+[Inputs]
+selImmediate
+=Crs2[31:0]=
+=SEUOperando[31:0]=
+[Outputs]
+=OperandoALU[31:0]=
+[BiDir]

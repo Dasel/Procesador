@@ -36,8 +36,13 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Procesador2_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="muxALU.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="muxALU.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="muxALU.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="muxALU.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="muxALU.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="signExtensionUnit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="signExtensionUnit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="signExtensionUnit.xst"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>

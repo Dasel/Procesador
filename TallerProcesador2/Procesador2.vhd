@@ -179,6 +179,12 @@ end component;
 		selImmediate => auxRegFile(13),
 		OperandoALU => auxMuxAlu
 	);
+	
+	my_SEU: signExtensionUnit PORT MAP(
+		simm13 => auxRegFile(12 downto 0),
+		simm32 => auxSeuMux
+		);
+
 
 	procesorResult <= auxDwr;
 end Behavioral;
