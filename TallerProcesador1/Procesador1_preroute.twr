@@ -1,0 +1,663 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+G:\X\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml Procesador1_preroute.twx Procesador1_map.ncd -o
+Procesador1_preroute.twr Procesador1.pcf
+
+Design file:              Procesador1_map.ncd
+Physical constraint file: Procesador1.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------------+-----------------+------------+-----------------+------------+------------------+--------+
+                  |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination       |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------------+-----------------+------------+-----------------+------------+------------------+--------+
+procesorResult<0> |        11.268(R)|      SLOW  |         5.583(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<1> |        11.504(R)|      SLOW  |         5.613(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<2> |        11.717(R)|      SLOW  |         5.781(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<3> |        11.493(R)|      SLOW  |         5.495(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<4> |        11.607(R)|      SLOW  |         5.565(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<5> |        11.740(R)|      SLOW  |         5.539(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<6> |        11.705(R)|      SLOW  |         5.481(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<7> |        11.825(R)|      SLOW  |         5.470(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<8> |        11.966(R)|      SLOW  |         5.492(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<9> |        11.902(R)|      SLOW  |         5.354(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<10>|        11.957(R)|      SLOW  |         5.450(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<11>|        10.918(R)|      SLOW  |         4.365(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<12>|        12.038(R)|      SLOW  |         5.710(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<13>|        11.109(R)|      SLOW  |         4.553(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<14>|        11.894(R)|      SLOW  |         5.439(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<15>|        11.829(R)|      SLOW  |         5.313(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<16>|        11.115(R)|      SLOW  |         4.466(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<17>|        11.950(R)|      SLOW  |         5.290(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<18>|        11.141(R)|      SLOW  |         4.645(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<19>|        11.963(R)|      SLOW  |         5.372(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<20>|        12.085(R)|      SLOW  |         5.396(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<21>|        12.228(R)|      SLOW  |         5.292(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<22>|        12.151(R)|      SLOW  |         5.519(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<23>|        12.030(R)|      SLOW  |         5.297(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<24>|        12.539(R)|      SLOW  |         5.999(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<25>|        11.469(R)|      SLOW  |         4.795(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<26>|        12.561(R)|      SLOW  |         5.852(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<27>|        11.388(R)|      SLOW  |         4.433(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<28>|        11.535(R)|      SLOW  |         4.781(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<29>|        12.485(R)|      SLOW  |         5.647(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<30>|        11.612(R)|      SLOW  |         4.700(R)|      FAST  |clk_IBUF          |   0.000|
+procesorResult<31>|        12.277(R)|      SLOW  |         5.259(R)|      FAST  |clk_IBUF          |   0.000|
+------------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock rst to Pad
+------------------+-----------------+------------+-----------------+------------+------------------------------------------------------------+--------+
+                  |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                                            | Clock  |
+Destination       |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                                           | Phase  |
+------------------+-----------------+------------+-----------------+------------+------------------------------------------------------------+--------+
+procesorResult<0> |        12.348(R)|      SLOW  |         8.831(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        12.695(F)|      SLOW  |         9.176(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        12.970(F)|      SLOW  |         9.248(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        12.878(F)|      SLOW  |         9.092(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.027(F)|      SLOW  |         9.349(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.018(F)|      SLOW  |         9.415(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        12.930(F)|      SLOW  |         9.363(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.616(F)|      SLOW  |         9.046(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        12.817(F)|      SLOW  |         9.147(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        12.888(F)|      SLOW  |         9.216(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        12.992(F)|      SLOW  |         9.390(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        12.782(F)|      SLOW  |         9.260(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.531(F)|      SLOW  |         9.094(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        12.824(F)|      SLOW  |         9.067(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.639(F)|      SLOW  |         9.123(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.640(F)|      SLOW  |         9.203(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<1> |        12.584(R)|      SLOW  |         8.481(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        12.931(F)|      SLOW  |         9.121(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.206(F)|      SLOW  |         9.318(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.114(F)|      SLOW  |         9.165(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.263(F)|      SLOW  |         9.455(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.254(F)|      SLOW  |         9.461(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.166(F)|      SLOW  |         9.315(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.852(F)|      SLOW  |         8.986(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.053(F)|      SLOW  |         9.296(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.124(F)|      SLOW  |         9.242(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.228(F)|      SLOW  |         9.240(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.018(F)|      SLOW  |         9.247(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.767(F)|      SLOW  |         8.800(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.060(F)|      SLOW  |         9.101(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.875(F)|      SLOW  |         9.136(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.876(F)|      SLOW  |         9.021(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<2> |        12.797(R)|      SLOW  |         8.647(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        13.144(F)|      SLOW  |         9.511(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.419(F)|      SLOW  |         9.574(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.327(F)|      SLOW  |         9.466(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.476(F)|      SLOW  |         9.583(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.467(F)|      SLOW  |         9.544(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.379(F)|      SLOW  |         9.598(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.065(F)|      SLOW  |         9.161(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.266(F)|      SLOW  |         9.320(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.337(F)|      SLOW  |         9.465(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.441(F)|      SLOW  |         9.488(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.231(F)|      SLOW  |         9.436(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.980(F)|      SLOW  |         9.189(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.273(F)|      SLOW  |         9.271(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.088(F)|      SLOW  |         9.305(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.089(F)|      SLOW  |         9.201(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<3> |        12.573(R)|      SLOW  |         8.580(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        12.920(F)|      SLOW  |         9.148(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.195(F)|      SLOW  |         9.219(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.103(F)|      SLOW  |         9.199(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.252(F)|      SLOW  |         9.225(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.243(F)|      SLOW  |         9.302(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.155(F)|      SLOW  |         9.240(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.841(F)|      SLOW  |         9.122(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.042(F)|      SLOW  |         9.356(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.113(F)|      SLOW  |         9.287(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.217(F)|      SLOW  |         9.378(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.007(F)|      SLOW  |         9.410(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.756(F)|      SLOW  |         9.055(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.049(F)|      SLOW  |         9.132(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.864(F)|      SLOW  |         9.062(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.865(F)|      SLOW  |         8.970(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<4> |        13.034(F)|      SLOW  |         9.176(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.309(F)|      SLOW  |         9.392(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.217(F)|      SLOW  |         9.402(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.366(F)|      SLOW  |         9.510(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.357(F)|      SLOW  |         9.563(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.269(F)|      SLOW  |         9.527(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.955(F)|      SLOW  |         9.154(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.156(F)|      SLOW  |         9.306(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.227(F)|      SLOW  |         9.158(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.331(F)|      SLOW  |         9.408(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.121(F)|      SLOW  |         9.296(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.870(F)|      SLOW  |         9.077(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.163(F)|      SLOW  |         9.280(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.005(F)|      SLOW  |         9.189(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.979(F)|      SLOW  |         9.317(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        12.687(R)|      SLOW  |         8.615(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<5> |        12.820(R)|      SLOW  |         8.474(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        13.167(F)|      SLOW  |         8.947(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.442(F)|      SLOW  |         9.153(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.350(F)|      SLOW  |         9.154(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.499(F)|      SLOW  |         9.473(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.490(F)|      SLOW  |         9.276(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.402(F)|      SLOW  |         9.403(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.088(F)|      SLOW  |         8.884(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.289(F)|      SLOW  |         9.138(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.360(F)|      SLOW  |         9.106(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.464(F)|      SLOW  |         9.148(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.254(F)|      SLOW  |         9.126(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.003(F)|      SLOW  |         9.179(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.296(F)|      SLOW  |         9.230(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.138(F)|      SLOW  |         9.285(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.112(F)|      SLOW  |         9.203(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<6> |        12.631(R)|      SLOW  |         8.507(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        13.038(F)|      SLOW  |         9.252(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.330(F)|      SLOW  |         9.495(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.161(F)|      SLOW  |         9.195(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.310(F)|      SLOW  |         9.436(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.301(F)|      SLOW  |         9.451(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.213(F)|      SLOW  |         9.466(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.899(F)|      SLOW  |         9.157(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.175(F)|      SLOW  |         9.411(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.171(F)|      SLOW  |         9.386(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.275(F)|      SLOW  |         9.334(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.108(F)|      SLOW  |         9.387(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.860(F)|      SLOW  |         9.034(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.107(F)|      SLOW  |         9.185(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.977(F)|      SLOW  |         9.239(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.003(F)|      SLOW  |         9.176(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<7> |        13.158(F)|      SLOW  |         9.164(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.450(F)|      SLOW  |         9.366(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.289(F)|      SLOW  |         9.302(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.438(F)|      SLOW  |         9.454(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.429(F)|      SLOW  |         9.474(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.341(F)|      SLOW  |         9.441(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.027(F)|      SLOW  |         9.126(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.295(F)|      SLOW  |         9.080(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.299(F)|      SLOW  |         9.367(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.403(F)|      SLOW  |         9.266(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.228(F)|      SLOW  |         9.400(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.980(F)|      SLOW  |         9.134(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.235(F)|      SLOW  |         9.241(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.097(F)|      SLOW  |         9.197(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.123(F)|      SLOW  |         9.076(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        12.759(R)|      SLOW  |         8.665(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<8> |        13.299(F)|      SLOW  |         9.358(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.591(F)|      SLOW  |         9.479(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.402(F)|      SLOW  |         9.186(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.533(F)|      SLOW  |         9.297(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.504(F)|      SLOW  |         9.270(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.416(F)|      SLOW  |         9.435(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.102(F)|      SLOW  |         8.951(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.436(F)|      SLOW  |         9.001(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.374(F)|      SLOW  |         9.164(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.478(F)|      SLOW  |         9.523(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.369(F)|      SLOW  |         9.088(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.121(F)|      SLOW  |         9.171(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.310(F)|      SLOW  |         9.238(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.238(F)|      SLOW  |         9.276(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.264(F)|      SLOW  |         9.277(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        12.834(R)|      SLOW  |         8.686(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<9> |        12.770(R)|      SLOW  |         8.336(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        13.235(F)|      SLOW  |         9.221(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.527(F)|      SLOW  |         9.387(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.338(F)|      SLOW  |         9.127(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.469(F)|      SLOW  |         9.328(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.440(F)|      SLOW  |         9.225(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.352(F)|      SLOW  |         9.246(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.038(F)|      SLOW  |         8.942(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.372(F)|      SLOW  |         9.065(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.310(F)|      SLOW  |         9.129(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.414(F)|      SLOW  |         9.395(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.305(F)|      SLOW  |         9.203(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.057(F)|      SLOW  |         8.807(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.246(F)|      SLOW  |         9.005(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.174(F)|      SLOW  |         9.021(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.200(F)|      SLOW  |         9.010(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<10>|        13.290(F)|      SLOW  |         8.870(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.582(F)|      SLOW  |         9.180(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.421(F)|      SLOW  |         8.954(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.524(F)|      SLOW  |         9.221(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.495(F)|      SLOW  |         9.217(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.407(F)|      SLOW  |         9.110(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.093(F)|      SLOW  |         8.820(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.427(F)|      SLOW  |         9.032(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.365(F)|      SLOW  |         9.019(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.572(F)|      SLOW  |         9.226(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.372(F)|      SLOW  |         8.985(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.112(F)|      SLOW  |         9.025(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.301(F)|      SLOW  |         9.062(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.229(F)|      SLOW  |         9.113(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.255(F)|      SLOW  |         8.796(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        12.825(R)|      SLOW  |         8.415(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<11>|        12.251(F)|      SLOW  |         8.001(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        12.543(F)|      SLOW  |         8.148(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        12.374(F)|      SLOW  |         8.029(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        12.485(F)|      SLOW  |         8.254(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        12.456(F)|      SLOW  |         8.107(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        12.368(F)|      SLOW  |         8.270(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.054(F)|      SLOW  |         7.780(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        12.388(F)|      SLOW  |         7.847(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        12.326(F)|      SLOW  |         7.886(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        12.525(F)|      SLOW  |         8.261(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        12.325(F)|      SLOW  |         7.938(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.073(F)|      SLOW  |         7.806(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        12.262(F)|      SLOW  |         7.913(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.190(F)|      SLOW  |         7.849(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.216(F)|      SLOW  |         7.691(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        11.786(R)|      SLOW  |         7.643(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<12>|        13.371(F)|      SLOW  |         9.286(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.663(F)|      SLOW  |         9.460(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.560(F)|      SLOW  |         9.450(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.644(F)|      SLOW  |         9.577(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.576(F)|      SLOW  |         9.651(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.488(F)|      SLOW  |         9.639(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.174(F)|      SLOW  |         9.122(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.508(F)|      SLOW  |         9.273(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.446(F)|      SLOW  |         9.374(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.711(F)|      SLOW  |         9.465(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.511(F)|      SLOW  |         9.386(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.193(F)|      SLOW  |         9.218(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.382(F)|      SLOW  |         9.456(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.310(F)|      SLOW  |         9.333(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.336(F)|      SLOW  |         9.262(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        12.906(R)|      SLOW  |         8.762(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<13>|        12.442(F)|      SLOW  |         8.167(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        12.734(F)|      SLOW  |         8.353(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        12.631(F)|      SLOW  |         8.103(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        12.715(F)|      SLOW  |         8.215(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        12.647(F)|      SLOW  |         8.372(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        12.559(F)|      SLOW  |         8.253(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.245(F)|      SLOW  |         7.830(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        12.579(F)|      SLOW  |         8.098(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        12.517(F)|      SLOW  |         8.173(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        12.782(F)|      SLOW  |         8.353(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        12.582(F)|      SLOW  |         8.094(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.264(F)|      SLOW  |         7.918(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        12.453(F)|      SLOW  |         8.116(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.381(F)|      SLOW  |         8.151(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.407(F)|      SLOW  |         8.039(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        11.977(R)|      SLOW  |         7.697(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<14>|        13.227(F)|      SLOW  |         8.904(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.519(F)|      SLOW  |         9.184(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.416(F)|      SLOW  |         8.998(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.500(F)|      SLOW  |         9.104(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.432(F)|      SLOW  |         9.143(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.344(F)|      SLOW  |         9.246(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.030(F)|      SLOW  |         8.787(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.364(F)|      SLOW  |         9.069(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.302(F)|      SLOW  |         9.144(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.567(F)|      SLOW  |         9.109(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.367(F)|      SLOW  |         9.157(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.049(F)|      SLOW  |         8.909(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.238(F)|      SLOW  |         8.999(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.166(F)|      SLOW  |         9.043(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.192(F)|      SLOW  |         8.929(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        12.762(R)|      SLOW  |         8.588(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<15>|        13.162(F)|      SLOW  |         9.027(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.454(F)|      SLOW  |         9.080(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.351(F)|      SLOW  |         9.100(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.435(F)|      SLOW  |         9.116(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.367(F)|      SLOW  |         9.193(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.279(F)|      SLOW  |         9.149(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.965(F)|      SLOW  |         8.882(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.299(F)|      SLOW  |         8.959(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.237(F)|      SLOW  |         9.038(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.502(F)|      SLOW  |         9.209(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.302(F)|      SLOW  |         9.050(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.984(F)|      SLOW  |         8.869(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.173(F)|      SLOW  |         8.958(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.101(F)|      SLOW  |         8.974(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.127(F)|      SLOW  |         9.084(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        12.697(R)|      SLOW  |         8.320(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<16>|        12.443(F)|      SLOW  |         8.308(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        12.735(F)|      SLOW  |         8.396(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        12.632(F)|      SLOW  |         8.263(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        12.716(F)|      SLOW  |         8.398(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        12.648(F)|      SLOW  |         8.529(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        12.560(F)|      SLOW  |         8.526(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.246(F)|      SLOW  |         8.160(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        12.580(F)|      SLOW  |         8.177(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        12.518(F)|      SLOW  |         8.160(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        12.783(F)|      SLOW  |         8.393(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        12.583(F)|      SLOW  |         8.265(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.265(F)|      SLOW  |         8.028(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        12.466(F)|      SLOW  |         8.099(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.382(F)|      SLOW  |         8.117(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.408(F)|      SLOW  |         8.270(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        11.978(R)|      SLOW  |         7.589(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<17>|        12.813(R)|      SLOW  |         8.478(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        13.278(F)|      SLOW  |         8.995(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.570(F)|      SLOW  |         9.102(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.467(F)|      SLOW  |         8.724(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.551(F)|      SLOW  |         9.008(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.483(F)|      SLOW  |         9.155(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.395(F)|      SLOW  |         8.978(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.081(F)|      SLOW  |         8.608(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.415(F)|      SLOW  |         8.754(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.353(F)|      SLOW  |         8.966(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.618(F)|      SLOW  |         8.991(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.418(F)|      SLOW  |         8.917(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.100(F)|      SLOW  |         8.887(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.301(F)|      SLOW  |         8.975(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.217(F)|      SLOW  |         8.997(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.243(F)|      SLOW  |         8.917(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<18>|        12.004(R)|      SLOW  |         7.806(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        12.469(F)|      SLOW  |         8.361(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        12.761(F)|      SLOW  |         8.474(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        12.658(F)|      SLOW  |         8.276(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        12.742(F)|      SLOW  |         8.468(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        12.674(F)|      SLOW  |         8.587(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        12.586(F)|      SLOW  |         8.408(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.272(F)|      SLOW  |         8.129(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        12.606(F)|      SLOW  |         8.360(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        12.544(F)|      SLOW  |         8.432(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        12.809(F)|      SLOW  |         8.319(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        12.609(F)|      SLOW  |         8.456(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.291(F)|      SLOW  |         8.158(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        12.492(F)|      SLOW  |         8.190(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.408(F)|      SLOW  |         8.296(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.434(F)|      SLOW  |         8.345(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<19>|        12.826(R)|      SLOW  |         8.566(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        13.291(F)|      SLOW  |         9.124(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.583(F)|      SLOW  |         9.290(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.480(F)|      SLOW  |         9.103(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.564(F)|      SLOW  |         9.217(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.496(F)|      SLOW  |         9.431(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.408(F)|      SLOW  |         9.349(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.094(F)|      SLOW  |         8.884(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.428(F)|      SLOW  |         8.885(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.366(F)|      SLOW  |         8.930(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.631(F)|      SLOW  |         9.288(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.431(F)|      SLOW  |         9.024(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.113(F)|      SLOW  |         9.078(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.314(F)|      SLOW  |         9.069(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.230(F)|      SLOW  |         9.133(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.256(F)|      SLOW  |         9.184(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<20>|        12.948(R)|      SLOW  |         8.613(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        13.413(F)|      SLOW  |         9.155(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.705(F)|      SLOW  |         9.127(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.602(F)|      SLOW  |         9.230(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.686(F)|      SLOW  |         9.377(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.618(F)|      SLOW  |         9.477(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.530(F)|      SLOW  |         9.408(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.216(F)|      SLOW  |         9.144(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.550(F)|      SLOW  |         9.105(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.488(F)|      SLOW  |         9.282(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.753(F)|      SLOW  |         9.271(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.553(F)|      SLOW  |         9.285(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.235(F)|      SLOW  |         8.946(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.436(F)|      SLOW  |         9.052(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.352(F)|      SLOW  |         9.187(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.378(F)|      SLOW  |         9.187(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<21>|        13.091(R)|      SLOW  |         8.498(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        13.556(F)|      SLOW  |         9.049(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.848(F)|      SLOW  |         9.234(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.745(F)|      SLOW  |         9.104(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.829(F)|      SLOW  |         9.316(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.761(F)|      SLOW  |         9.406(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.673(F)|      SLOW  |         9.153(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.359(F)|      SLOW  |         9.083(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.693(F)|      SLOW  |         9.143(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.631(F)|      SLOW  |         9.250(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.896(F)|      SLOW  |         9.251(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.696(F)|      SLOW  |         9.132(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.378(F)|      SLOW  |         8.848(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.579(F)|      SLOW  |         9.028(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.495(F)|      SLOW  |         9.065(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.521(F)|      SLOW  |         8.973(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<22>|        13.479(F)|      SLOW  |         9.073(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.771(F)|      SLOW  |         9.462(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.668(F)|      SLOW  |         9.138(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.752(F)|      SLOW  |         9.423(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.684(F)|      SLOW  |         9.570(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.596(F)|      SLOW  |         9.432(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.282(F)|      SLOW  |         9.104(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.616(F)|      SLOW  |         9.217(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.554(F)|      SLOW  |         9.213(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.819(F)|      SLOW  |         9.466(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.619(F)|      SLOW  |         9.252(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.301(F)|      SLOW  |         9.147(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.502(F)|      SLOW  |         9.165(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.418(F)|      SLOW  |         9.263(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.444(F)|      SLOW  |         9.183(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        13.014(R)|      SLOW  |         8.639(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<23>|        13.358(F)|      SLOW  |         8.930(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.650(F)|      SLOW  |         9.166(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.547(F)|      SLOW  |         9.142(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.631(F)|      SLOW  |         9.093(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.563(F)|      SLOW  |         9.235(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.475(F)|      SLOW  |         8.863(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.161(F)|      SLOW  |         8.631(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.495(F)|      SLOW  |         8.796(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.433(F)|      SLOW  |         8.747(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.698(F)|      SLOW  |         8.861(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.498(F)|      SLOW  |         8.762(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.180(F)|      SLOW  |         8.863(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.381(F)|      SLOW  |         8.940(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.297(F)|      SLOW  |         8.978(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.323(F)|      SLOW  |         9.018(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        12.893(R)|      SLOW  |         8.549(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<24>|        13.867(F)|      SLOW  |         9.764(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        14.159(F)|      SLOW  |         9.964(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        14.056(F)|      SLOW  |         9.822(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        14.140(F)|      SLOW  |         9.941(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        14.072(F)|      SLOW  |         9.955(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.984(F)|      SLOW  |        10.077(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.670(F)|      SLOW  |         9.897(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        14.004(F)|      SLOW  |         9.731(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.942(F)|      SLOW  |         9.803(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        14.207(F)|      SLOW  |        10.109(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        14.007(F)|      SLOW  |         9.937(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.689(F)|      SLOW  |         9.638(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.890(F)|      SLOW  |         9.707(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.806(F)|      SLOW  |         9.758(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.832(F)|      SLOW  |         9.720(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        13.402(R)|      SLOW  |         9.261(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<25>|        12.332(R)|      SLOW  |         8.092(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        12.797(F)|      SLOW  |         8.748(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.089(F)|      SLOW  |         8.881(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        12.986(F)|      SLOW  |         8.671(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.070(F)|      SLOW  |         8.818(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.002(F)|      SLOW  |         8.871(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        12.914(F)|      SLOW  |         8.849(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.659(F)|      SLOW  |         8.795(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        12.934(F)|      SLOW  |         8.465(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        12.872(F)|      SLOW  |         8.648(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.137(F)|      SLOW  |         9.009(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        12.937(F)|      SLOW  |         8.671(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.619(F)|      SLOW  |         8.716(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        12.820(F)|      SLOW  |         8.724(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.736(F)|      SLOW  |         8.771(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.762(F)|      SLOW  |         8.660(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<26>|        13.424(R)|      SLOW  |         9.145(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+                  |        13.889(F)|      SLOW  |         9.830(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        14.181(F)|      SLOW  |        10.015(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        14.078(F)|      SLOW  |        10.029(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        14.162(F)|      SLOW  |        10.094(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        14.094(F)|      SLOW  |        10.106(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        14.006(F)|      SLOW  |         9.983(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        14.016(F)|      SLOW  |         9.904(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        14.026(F)|      SLOW  |         9.872(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.964(F)|      SLOW  |         9.829(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        14.229(F)|      SLOW  |        10.032(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        14.029(F)|      SLOW  |         9.857(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.711(F)|      SLOW  |         9.672(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.912(F)|      SLOW  |         9.730(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.828(F)|      SLOW  |         9.885(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.854(F)|      SLOW  |         9.769(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+procesorResult<27>|        12.716(F)|      SLOW  |         8.549(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.008(F)|      SLOW  |         8.846(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        12.905(F)|      SLOW  |         8.788(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        12.989(F)|      SLOW  |         8.932(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        12.921(F)|      SLOW  |         8.727(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        12.833(F)|      SLOW  |         8.840(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        12.835(F)|      SLOW  |         8.698(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        12.853(F)|      SLOW  |         8.700(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        12.791(F)|      SLOW  |         8.791(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.056(F)|      SLOW  |         8.762(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        12.856(F)|      SLOW  |         8.746(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.538(F)|      SLOW  |         8.429(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        12.739(F)|      SLOW  |         8.542(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.655(F)|      SLOW  |         8.597(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.681(F)|      SLOW  |         8.517(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        12.251(R)|      SLOW  |         7.696(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<28>|        12.863(F)|      SLOW  |         8.480(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.155(F)|      SLOW  |         8.651(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.052(F)|      SLOW  |         8.820(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.136(F)|      SLOW  |         8.962(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.068(F)|      SLOW  |         8.806(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        12.980(F)|      SLOW  |         8.895(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.048(F)|      SLOW  |         8.841(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.000(F)|      SLOW  |         8.614(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        12.938(F)|      SLOW  |         8.782(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.203(F)|      SLOW  |         8.807(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.003(F)|      SLOW  |         8.892(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.728(F)|      SLOW  |         8.476(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        12.886(F)|      SLOW  |         8.661(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.802(F)|      SLOW  |         8.741(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.828(F)|      SLOW  |         8.562(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        12.398(R)|      SLOW  |         8.111(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<29>|        13.813(F)|      SLOW  |         9.147(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        14.105(F)|      SLOW  |         9.458(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        14.002(F)|      SLOW  |         9.308(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        14.086(F)|      SLOW  |         9.430(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        14.018(F)|      SLOW  |         9.508(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.930(F)|      SLOW  |         9.359(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.998(F)|      SLOW  |         9.759(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.950(F)|      SLOW  |         9.372(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.888(F)|      SLOW  |         9.436(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        14.153(F)|      SLOW  |         9.466(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.953(F)|      SLOW  |         9.436(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.678(F)|      SLOW  |         9.293(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.836(F)|      SLOW  |         9.387(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.752(F)|      SLOW  |         9.350(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.778(F)|      SLOW  |         9.278(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        13.348(R)|      SLOW  |         8.871(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<30>|        12.940(F)|      SLOW  |         8.563(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.232(F)|      SLOW  |         8.879(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.129(F)|      SLOW  |         8.828(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.213(F)|      SLOW  |         8.952(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.145(F)|      SLOW  |         8.783(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.057(F)|      SLOW  |         8.979(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.125(F)|      SLOW  |         8.903(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.077(F)|      SLOW  |         8.808(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.015(F)|      SLOW  |         8.899(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.280(F)|      SLOW  |         8.887(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.080(F)|      SLOW  |         8.909(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        12.805(F)|      SLOW  |         8.426(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        12.963(F)|      SLOW  |         8.766(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        12.879(F)|      SLOW  |         8.685(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        12.905(F)|      SLOW  |         8.631(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        12.475(R)|      SLOW  |         7.888(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+procesorResult<31>|        13.605(F)|      SLOW  |         9.091(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_130_o_BUFG               |   0.000|
+                  |        13.897(F)|      SLOW  |         9.189(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_194_o_BUFG               |   0.000|
+                  |        13.794(F)|      SLOW  |         9.312(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_258_o_BUFG               |   0.000|
+                  |        13.878(F)|      SLOW  |         9.356(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_322_o_BUFG               |   0.000|
+                  |        13.810(F)|      SLOW  |         9.366(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_386_o_BUFG               |   0.000|
+                  |        13.722(F)|      SLOW  |         9.440(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_450_o_BUFG               |   0.000|
+                  |        13.790(F)|      SLOW  |         9.535(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_514_o_BUFG               |   0.000|
+                  |        13.742(F)|      SLOW  |         9.444(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_578_o_BUFG               |   0.000|
+                  |        13.680(F)|      SLOW  |         9.520(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_642_o_BUFG               |   0.000|
+                  |        13.945(F)|      SLOW  |         9.316(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_68_o_BUFG                |   0.000|
+                  |        13.745(F)|      SLOW  |         9.664(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_706_o_BUFG               |   0.000|
+                  |        13.470(F)|      SLOW  |         9.288(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_770_o_BUFG               |   0.000|
+                  |        13.628(F)|      SLOW  |         9.305(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_834_o_BUFG               |   0.000|
+                  |        13.544(F)|      SLOW  |         9.306(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_898_o_BUFG               |   0.000|
+                  |        13.570(F)|      SLOW  |         9.325(F)|      FAST  |my_registerfile/reset_GND_42_o_AND_962_o_BUFG               |   0.000|
+                  |        13.140(R)|      SLOW  |         8.868(R)|      FAST  |my_registerfile/registerDestination[4]_Decoder_3_OUT<0>_BUFG|   0.000|
+------------------+-----------------+------------+-----------------+------------+------------------------------------------------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.637|         |         |         |
+rst            |    0.433|    0.433|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rst
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.728|         |    5.140|         |
+rst            |    3.920|    5.502|    6.161|    7.205|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+------------------+---------+
+Source Pad     |Destination Pad   |  Delay  |
+---------------+------------------+---------+
+rst            |procesorResult<0> |    9.390|
+rst            |procesorResult<1> |    9.626|
+rst            |procesorResult<2> |    9.839|
+rst            |procesorResult<3> |    9.615|
+rst            |procesorResult<4> |    9.769|
+rst            |procesorResult<5> |    9.902|
+rst            |procesorResult<6> |    9.825|
+rst            |procesorResult<7> |    9.945|
+rst            |procesorResult<8> |   10.086|
+rst            |procesorResult<9> |   10.022|
+rst            |procesorResult<10>|   10.077|
+rst            |procesorResult<11>|    9.038|
+rst            |procesorResult<12>|   10.213|
+rst            |procesorResult<13>|    9.284|
+rst            |procesorResult<14>|   10.069|
+rst            |procesorResult<15>|   10.004|
+rst            |procesorResult<16>|    9.285|
+rst            |procesorResult<17>|   10.120|
+rst            |procesorResult<18>|    9.311|
+rst            |procesorResult<19>|   10.133|
+rst            |procesorResult<20>|   10.255|
+rst            |procesorResult<21>|   10.398|
+rst            |procesorResult<22>|   10.321|
+rst            |procesorResult<23>|   10.200|
+rst            |procesorResult<24>|   10.709|
+rst            |procesorResult<25>|    9.639|
+rst            |procesorResult<26>|   10.731|
+rst            |procesorResult<27>|    9.558|
+rst            |procesorResult<28>|    9.705|
+rst            |procesorResult<29>|   10.655|
+rst            |procesorResult<30>|    9.782|
+rst            |procesorResult<31>|   10.447|
+---------------+------------------+---------+
+
+
+Analysis completed Mon Apr 18 10:48:24 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 622 MB
+
+
+

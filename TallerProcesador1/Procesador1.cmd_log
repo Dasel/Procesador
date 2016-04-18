@@ -19,3 +19,7 @@ xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador1/P
 xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador1/Procesador1.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador1/Procesador1.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 Procesador1.ngc Procesador1.ngd  
 map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Procesador1_map.ncd Procesador1.ngd Procesador1.pcf 
+par -w -intstyle ise -ol high -mt off Procesador1_map.ncd Procesador1.ncd Procesador1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Procesador1.twx Procesador1.ncd -o Procesador1.twr Procesador1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Procesador1_preroute.twx Procesador1_map.ncd -o Procesador1_preroute.twr Procesador1.pcf 
+netgen -intstyle ise -s 3  -pcf Procesador1.pcf -rpw 100 -tpw 0 -ar Structure -tm Procesador1 -w -dir netgen/map -ofmt vhdl -sim Procesador1_map.ncd Procesador1_map.vhd 
