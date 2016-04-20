@@ -1,0 +1,45 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/tbprocesador_isim_beh.exe -prj C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/tbprocesador_beh.prj work.tbprocesador 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/unidadControl.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/signExtensionUnit.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/registerfile.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/PSRModifier.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/PSR.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/PC.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/nPC.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/muxALU.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/instructionMemory.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/adder.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/Procesador3.vhd" into library work
+Parsing VHDL file "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/tbprocesador.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package numeric_std
+Compiling architecture arqadder of entity adder [adder_default]
+Compiling architecture arqnpc of entity nPC [npc_default]
+Compiling architecture arqpc of entity PC [pc_default]
+Compiling architecture arqim of entity instructionMemory [instructionmemory_default]
+Compiling architecture arqrf of entity registerfile [registerfile_default]
+Compiling architecture arquc of entity unidadControl [unidadcontrol_default]
+Compiling architecture arqalu of entity ALU [alu_default]
+Compiling architecture arqmuxalu of entity muxALU [muxalu_default]
+Compiling architecture arqseu of entity signExtensionUnit [signextensionunit_default]
+Compiling architecture arqpsr of entity PSR [psr_default]
+Compiling architecture arqpsrmodifier of entity PSRModifier [psrmodifier_default]
+Compiling architecture behavioral of entity Procesador [procesador_default]
+Compiling architecture behavior of entity tbprocesador
+Time Resolution for simulation is 1ps.
+Waiting for 10 sub-compilation(s) to finish...
+Compiled 31 VHDL Units
+Built simulation executable C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/tbprocesador_isim_beh.exe
+Fuse Memory Usage: 36916 KB
+Fuse CPU Usage: 592 ms

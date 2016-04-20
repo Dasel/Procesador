@@ -108,9 +108,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1460988604" xil_pn:in_ck="-7062996909469558372" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1460988604">
+    <transform xil_pn:end_ts="1461112873" xil_pn:in_ck="-7062996909469558372" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1461112873">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
       <outfile xil_pn:name="ALU.vhd"/>
       <outfile xil_pn:name="PC.vhd"/>
       <outfile xil_pn:name="adder.vhd"/>
@@ -134,17 +136,19 @@
     <transform xil_pn:end_ts="1460988605" xil_pn:in_ck="-7062996909469558372" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1460988604">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ALU.vhd"/>
-      <outfile xil_pn:name="PC.vhd"/>
-      <outfile xil_pn:name="adder.vhd"/>
-      <outfile xil_pn:name="instructionMemory.vhd"/>
-      <outfile xil_pn:name="nPC.vhd"/>
-      <outfile xil_pn:name="registerfile.vhd"/>
-      <outfile xil_pn:name="unidadControl.vhd"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1460988650" xil_pn:in_ck="-7062996909469558372" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="6067088567954539090" xil_pn:start_ts="1460988643">
       <status xil_pn:value="FailedRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1460900058" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1460900058">
       <status xil_pn:value="SuccessfullyRun"/>
