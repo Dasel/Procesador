@@ -1,0 +1,21 @@
+Running: G:\X\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o G:/procesador/procesador1/Procesador/TallerProcesador3/tbprocesador_isim_beh.exe -prj G:/procesador/procesador1/Procesador/TallerProcesador3/tbprocesador_beh.prj work.tbprocesador 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/unidadControl.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/signExtensionUnit.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/registerfile.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/PSRModifier.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/PSR.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/PC.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/nPC.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/muxALU.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/instructionMemory.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/ALU.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/adder.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.vhd" into library work
+Parsing VHDL file "G:/procesador/procesador1/Procesador/TallerProcesador3/tbprocesador.vhd" into library work
+Starting static elaboration
+ERROR:HDLCompiler:432 - "G:/procesador/procesador1/Procesador/TallerProcesador3/PSRModifier.vhd" Line 34: Formal <reset> has no actual or default value.
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit tbprocesador in library work failed
