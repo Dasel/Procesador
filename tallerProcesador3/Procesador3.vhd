@@ -29,19 +29,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
 
 
 
-entity Procesador is
+
+entity Procesador3 is
 	Port ( 
 				clk : in  STD_LOGIC;
 				rst : in  STD_LOGIC;
 				procesorResult : inout  STD_LOGIC_VECTOR (31 downto 0));
-end Procesador;
+end Procesador3;
 
-architecture Behavioral of Procesador is
+architecture Behavioral of Procesador3 is
 
 component adder 
     Port ( operand1 : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -126,6 +125,7 @@ end component;
 
 component PSRModifier
     Port ( aluResult : in  STD_LOGIC_VECTOR (31 downto 0);
+			  reset : in  STD_LOGIC;
            operando1 : in  STD_LOGIC;
            operando2 : in  STD_LOGIC;
            aluOp : in  STD_LOGIC_VECTOR (5 downto 0);
@@ -152,9 +152,9 @@ end component;
 	signal carryAlu : std_logic;
 	signal nzvcPsrMod : std_logic_vector(3 downto 0);
 	
+	
+	
 	begin
-	
-	
 	
 	my_adder: adder PORT MAP(
 		operand1 =>auxPc,
@@ -236,6 +236,7 @@ end component;
 		);
 	my_PSRModifier: PSRModifier PORT MAP(
 		aluResult => auxDwr,
+		reset => rst,
 		operando1 => auxCrs1(31),
 		operando2 => auxMuxAlu(31),
 		aluOp => auxAlu,

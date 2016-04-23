@@ -10,3 +10,8 @@ xst -intstyle ise -ifn "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3
 xst -intstyle ise -ifn "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/Procesador3.xst" -ofn "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/Procesador3.syr" 
 xst -intstyle ise -ifn "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/Procesador3.xst" -ofn "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/Procesador3.syr" 
 xst -intstyle ise -ifn "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/Procesador3.xst" -ofn "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/Procesador3.syr" 
+xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.syr" 
+xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.syr" 
+xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.syr" 
+xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.syr" 
+xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.syr" 

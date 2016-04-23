@@ -1,0 +1,29 @@
+Command line:
+   tbPSR_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50926
+
+Sat Apr 16 18:46:43 2016
+
+
+ Elaboration Time: 0.171875 sec
+
+ Current Memory Usage: 839.762 Meg
+
+ Total Signals          : 9
+ Total Nets             : 39
+ Total Signal Drivers   : 5
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 3
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 523
+Total Line Count : 16
+
+ Total Simulation Time: 0.1875 sec
+
+ Current Memory Usage: 839.762 Meg
+
+Sat Apr 16 18:47:00 2016
+

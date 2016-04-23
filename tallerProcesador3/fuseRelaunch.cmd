@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "G:/procesador/procesador1/Procesador/TallerProcesador3/tbprocesador_isim_beh.exe" -prj "G:/procesador/procesador1/Procesador/TallerProcesador3/tbprocesador_beh.prj" "work.tbprocesador" 
+-intstyle "ise" -incremental -lib "secureip" -o "G:/procesador/procesador1/Procesador/TallerProcesador3/tbProcesador3_isim_beh.exe" -prj "G:/procesador/procesador1/Procesador/TallerProcesador3/tbProcesador3_beh.prj" "work.tbProcesador3" 

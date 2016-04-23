@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/xst"
+set -tmpdir "C:/Users/utp/Downloads/procesador/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/utp/Downloads/procesador/xst"
 run -compileonly yes
 -p xc7a100t-3-csg324
 -top ALU

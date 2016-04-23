@@ -1,16 +1,16 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Users/Jhon Sebastian/Documents/universidad/semestre7/arquitortura/procesador/procesador2/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.42 secs
  
---> Parameter xsthdpdir set to C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/xst
+--> Parameter xsthdpdir set to C:/Users/Jhon Sebastian/Documents/universidad/semestre7/arquitortura/procesador/procesador2/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.42 secs
  
 --> Reading design: nPC.prj
 
@@ -39,17 +39,17 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\utp\Desktop\tallerProcesador3\tallerProcesador3\nPC.vhd" into library work
+Parsing VHDL file "C:\Users\Jhon Sebastian\Documents\universidad\semestre7\arquitortura\procesador\procesador2\nPC.vhd" into library work
 Parsing entity <nPC>.
 Parsing architecture <arqNPC> of entity <npc>.
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.54 secs
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 22.70 secs
  
 --> 
 
-Total memory usage is 215248 kilobytes
+Total memory usage is 263068 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

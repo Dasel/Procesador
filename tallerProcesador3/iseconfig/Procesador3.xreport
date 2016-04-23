@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-04-19T17:36:01</DateModified>
-  <ModuleName>Procesador</ModuleName>
+  <DateModified>2016-04-23T13:24:59</DateModified>
+  <ModuleName>Procesador3</ModuleName>
   <SummaryTimeStamp>2016-04-19T17:32:37</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3/iseconfig/Procesador3.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/utp/Desktop/tallerProcesador3/tallerProcesador3</ImplementationReportsDirectory>
+  <SavedFilePath>G:/procesador/procesador1/Procesador/TallerProcesador3/iseconfig/Procesador3.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>G:/procesador/procesador1/Procesador/TallerProcesador3\</ImplementationReportsDirectory>
   <DateInitialized>2016-04-19T17:01:36</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
