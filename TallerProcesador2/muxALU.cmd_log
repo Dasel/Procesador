@@ -1,2 +1,0 @@
-vhdtdtfi -lib work muxALU.vhd -prj TallerProcesador2 -o muxALU.spl -module muxALU -template G:/X/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family artix7 muxALU.spl G:/procesador/procesador1/Procesador/TallerProcesador2/muxALU.sym 

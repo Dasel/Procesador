@@ -1,0 +1,40 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/utp.CRIE/Desktop/procesador2/Procesador_tb_isim_beh.exe -prj C:/Users/utp.CRIE/Desktop/procesador2/Procesador_tb_beh.prj work.Procesador_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador2/unidadControl.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador2/signExtensionUnit.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador2/registerFile.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador2/PC.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador2/nPC.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador2/muxALU.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador2/instructionMemory.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador2/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador2/adder.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador2/Procesador.vhd" into library work
+Parsing VHDL file "C:/Users/utp.CRIE/Desktop/procesador2/Procesador_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling architecture arqadder of entity adder [adder_default]
+Compiling architecture arqnpc of entity nPC [npc_default]
+Compiling architecture arqpc of entity PC [pc_default]
+Compiling architecture arqinstructionmemory of entity instructionMemory [instructionmemory_default]
+Compiling architecture arqregisterfile of entity registerFile [registerfile_default]
+Compiling architecture arqunidadcontrol of entity unidadControl [unidadcontrol_default]
+Compiling architecture arqalu of entity ALU [alu_default]
+Compiling architecture arqmuxalu of entity muxALU [muxalu_default]
+Compiling architecture arqsignextensionunit of entity signExtensionUnit [signextensionunit_default]
+Compiling architecture behavioral of entity Procesador [procesador_default]
+Compiling architecture behavior of entity procesador_tb
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 26 VHDL Units
+Built simulation executable C:/Users/utp.CRIE/Desktop/procesador2/Procesador_tb_isim_beh.exe
+Fuse Memory Usage: 33752 KB
+Fuse CPU Usage: 498 ms

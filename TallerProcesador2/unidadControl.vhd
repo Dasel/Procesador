@@ -1,33 +1,6 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    22:22:23 04/16/2016 
--- Design Name: 
--- Module Name:    unidadControl - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 
 
@@ -39,35 +12,46 @@ entity unidadControl is
            ALUOP : out  STD_LOGIC_VECTOR (5 downto 0));
 end unidadControl;
 
-architecture arqUC of unidadControl is
+architecture arqUnidadControl of unidadControl is
 
 begin
 	process(op,op3)
 	begin
 					if(op = "10")then				
 						case op3 is
-							when "000000" => -- add
-								ALUOP <= "000000";				
-							when "000100" => --and
-								ALUOP <= "000100";
-							when "001000" => -- or
+							when "000000" => -- ADD
+								ALUOP <= "000000";
+								--wren <= '1';
+							when "000010" => -- OR
 								ALUOP <= "001000";
-							when "010000" => -- sub
+								--wren <= '1';
+							when "000100" => -- SUB
 								ALUOP <= "010000";
-							when "010011" => -- xor
+								--wren <= '1';
+							when "000001" => -- AND
+								ALUOP <= "000001";
+								--wren <= '1';
+							when "010011" => -- XOR
 								ALUOP <= "010011";
-							when "000111" => -- xnor
+								--wren <= '1';
+							when "000111" => -- XNOR
 								ALUOP <= "000111";
-							when "000101" => -- andn
+								--wren <= '1';
+							when "000101" => -- ANDN
 								ALUOP <= "000101";
-							when "000110" => -- orn
-								ALUOP <= "000110";								
+								--wren <= '1';
+							when "000110" => -- ORN
+								ALUOP <= "000110";
+								--wren <= '1';
 							when others => -- Cae el nop
-								ALUOP <= (others=>'0');						
+								ALUOP <= (others=>'0');
+								--wren <= '0';
+							
 						end case;
 					else 
 						ALUOP <= (others=>'0');
+						--wren <= '0';
 					end if;
+		--end if; -- if rising_edge
 	end process;
-end arqUC;
-
+end arqUnidadControl;

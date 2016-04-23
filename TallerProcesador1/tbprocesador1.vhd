@@ -1,46 +1,93 @@
--- TestBench Template 
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
+-- Create Date:   10:58:35 04/23/2016
+-- Design Name:   
+-- Module Name:   G:/procesador/export/procesador1/tbProcesador1.vhd
+-- Project Name:  procesador
+-- Target Device:  
+-- Tool versions:  
+-- Description:   
+-- 
+-- VHDL Test Bench Created by ISE for module: Procesador1
+-- 
+-- Dependencies:
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+-- Notes: 
+-- This testbench has been automatically generated using types std_logic and
+-- std_logic_vector for the ports of the unit under test.  Xilinx recommends
+-- that these types always be used for the top-level I/O of a design in order
+-- to guarantee that the testbench will bind correctly to the post-implementation 
+-- simulation model.
+--------------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+ 
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--USE ieee.numeric_std.ALL;
+ 
+ENTITY tbProcesador1 IS
+END tbProcesador1;
+ 
+ARCHITECTURE behavior OF tbProcesador1 IS 
+ 
+    -- Component Declaration for the Unit Under Test (UUT)
+ 
+    COMPONENT Procesador1
+    PORT(
+         clk : IN  std_logic;
+         rst : IN  std_logic;
+         procesorResult : INOUT  std_logic_vector(31 downto 0)
+        );
+    END COMPONENT;
+    
 
-  LIBRARY ieee;
-  USE ieee.std_logic_1164.ALL;
-  USE ieee.numeric_std.ALL;
+   --Inputs
+   signal clk : std_logic := '0';
+   signal rst : std_logic := '0';
 
-  ENTITY testbench IS
-  END testbench;
+	--BiDirs
+   signal procesorResult : std_logic_vector(31 downto 0);
 
-  ARCHITECTURE behavior OF testbench IS 
+   -- Clock period definitions
+   constant clk_period : time := 10 ns;
+ 
+BEGIN
+ 
+	-- Instantiate the Unit Under Test (UUT)
+   uut: Procesador1 PORT MAP (
+          clk => clk,
+          rst => rst,
+          procesorResult => procesorResult
+        );
 
-  -- Component Declaration
-          COMPONENT <component name>
-          PORT(
-                  <port1> : IN std_logic;
-                  <port2> : IN std_logic_vector(3 downto 0);       
-                  <port3> : OUT std_logic_vector(3 downto 0)
-                  );
-          END COMPONENT;
+   -- Clock process definitions
+   clk_process :process
+   begin
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+   end process;
+ 
 
-          SIGNAL <signal1> :  std_logic;
-          SIGNAL <signal2> :  std_logic_vector(3 downto 0);
-          
+   -- Stimulus process
+   stim_proc: process
+   begin		
+      -- hold reset state for 100 ns.
+      wait for 100 ns;	
 
-  BEGIN
+      wait for clk_period*10;
 
-  -- Component Instantiation
-          uut: <component name> PORT MAP(
-                  <port1> => <signal1>,
-                  <port3> => <signal2>
-          );
+      -- insert stimulus here 
 
+      wait;
+   end process;
 
-  --  Test Bench Statements
-     tb : PROCESS
-     BEGIN
-
-        wait for 100 ns; -- wait until global set/reset completes
-
-        -- Add user defined stimulus here
-
-        wait; -- will wait forever
-     END PROCESS tb;
-  --  End Test Bench 
-
-  END;
+END;
