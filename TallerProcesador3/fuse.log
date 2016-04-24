@@ -38,8 +38,8 @@ Compiling architecture arqpsrmodifier of entity PSRModifier [psrmodifier_default
 Compiling architecture behavioral of entity Procesador3 [procesador3_default]
 Compiling architecture behavior of entity tbprocesador3
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
+Waiting for 3 sub-compilation(s) to finish...
 Compiled 31 VHDL Units
 Built simulation executable G:/procesador/procesador1/Procesador/TallerProcesador3/tbProcesador3_isim_beh.exe
-Fuse Memory Usage: 37984 KB
-Fuse CPU Usage: 577 ms
+Fuse Memory Usage: 37932 KB
+Fuse CPU Usage: 561 ms

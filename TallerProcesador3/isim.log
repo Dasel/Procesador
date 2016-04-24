@@ -16,4 +16,3 @@ at 0 ps, Instance /tbprocesador3/uut/my_registerfile/ : Warning: CONV_INTEGER: T
 at 0 ps, Instance /tbprocesador3/uut/my_registerfile/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /tbprocesador3/uut/my_registerfile/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
-at 15 ns(2), Instance /tbprocesador3/uut/my_instructionMemory/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
