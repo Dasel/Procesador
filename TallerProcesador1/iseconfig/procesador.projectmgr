@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Procesador1 - Behavioral (G:/procesador/export/procesador1/Procesador.vhd)</SelectedItem>
+         <SelectedItem>Procesador - Behavioral (D:/Users/DAVID/Desktop/procesador1/Procesador.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000252000000020000000000000000000000000200000064ffffffff000000810000000300000002000002520000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Procesador1 - Behavioral (G:/procesador/export/procesador1/Procesador.vhd)</CurrentItem>
+      <CurrentItem>Procesador - Behavioral (D:/Users/DAVID/Desktop/procesador1/Procesador.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -66,36 +66,27 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Synthesize - XST</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Synthesize - XST</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/Procesador_tb - behavior C:|Users|David|Desktop|procesador1|Procesador_tb.vhd/uut - Procesador - Behavioral</ClosedNode>
-         <ClosedNode>/tbInstructionmemory - behavior C:|Users|David|Desktop|procesador1|tbInstructionmemory.vhd</ClosedNode>
          <ClosedNode>/tbInstructionmemory - behavior C:|Users|Jhon Sebastian|Documents|universidad|semestre7|arquitectura|procesador|procesador1-3|tbInstructionmemory.vhd</ClosedNode>
-         <ClosedNode>/tbInstructionmemory - behavior G:|procesador|export|procesador1|tbInstructionmemory.vhd</ClosedNode>
-         <ClosedNode>/tbPC - behavior C:|Users|David|Desktop|procesador1|tbPC.vhd</ClosedNode>
-         <ClosedNode>/tbPC - behavior G:|procesador|export|procesador1|tbPC.vhd</ClosedNode>
-         <ClosedNode>/tbadder - behavior C:|Users|David|Desktop|procesador1|tbadder.vhd</ClosedNode>
-         <ClosedNode>/tbadder - behavior G:|procesador|export|procesador1|tbadder.vhd</ClosedNode>
-         <ClosedNode>/tbunidadControl - behavior C:|Users|David|Desktop|procesador1|tbunidadControl.vhd</ClosedNode>
-         <ClosedNode>/tbunidadControl - behavior G:|procesador|export|procesador1|tbunidadControl.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>my_instructionMemory - instructionMemory - arqInstructionMemory (G:/procesador/export/procesador1/instructionMemory.vhd)</SelectedItem>
+         <SelectedItem>Procesador_tb - behavior (D:/Users/DAVID/Desktop/procesador1/Procesador_tb.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000266000000020000000000000000000000000200000064ffffffff000000810000000300000002000002660000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>my_instructionMemory - instructionMemory - arqInstructionMemory (G:/procesador/export/procesador1/instructionMemory.vhd)</CurrentItem>
+      <CurrentItem>Procesador_tb - behavior (D:/Users/DAVID/Desktop/procesador1/Procesador_tb.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

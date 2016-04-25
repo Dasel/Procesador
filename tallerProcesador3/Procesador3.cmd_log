@@ -15,3 +15,4 @@ xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador3/P
 xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.syr" 
 xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.syr" 
 xst -intstyle ise -ifn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.xst" -ofn "G:/procesador/procesador1/Procesador/TallerProcesador3/Procesador3.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Procesador3.ngc Procesador3_synthesis.v 

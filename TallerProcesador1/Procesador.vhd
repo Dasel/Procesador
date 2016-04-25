@@ -1,35 +1,16 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    21:01:57 04/16/2016 
--- Design Name: 
--- Module Name:    Procesador1 - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
 
-entity Procesador1 is
+entity Procesador is
 	Port ( 
 				clk : in  STD_LOGIC;
 				rst : in  STD_LOGIC;
 				procesorResult : inout  STD_LOGIC_VECTOR (31 downto 0));
-end Procesador1;
+end Procesador;
 
-architecture Behavioral of Procesador1 is
+architecture Behavioral of Procesador is
 
 component adder 
     Port ( operand1 : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -85,6 +66,7 @@ component ALU
     Port ( operando1 : in  STD_LOGIC_VECTOR (31 downto 0);
            operando2 : in  STD_LOGIC_VECTOR (31 downto 0);
            aluOP : in  STD_LOGIC_VECTOR (5 downto 0);
+
            AluResult : out  STD_LOGIC_VECTOR (31 downto 0));
 end component;
 
@@ -170,3 +152,4 @@ end component;
 
 
 end Behavioral;
+

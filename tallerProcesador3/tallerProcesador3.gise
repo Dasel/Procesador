@@ -105,6 +105,8 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="nPC.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="nPC.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/Procesador3_synthesis.nlf"/>
+    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/Procesador3_synthesis.v"/>
     <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/Procesador_synthesis.nlf"/>
     <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/Procesador_synthesis.v"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="signExtensionUnit.prj"/>
@@ -188,7 +190,7 @@
       <outfile xil_pn:name="tbProcesador3_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1461467618" xil_pn:in_ck="-186969913750481694" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5332843872647163841" xil_pn:start_ts="1461467618">
+    <transform xil_pn:end_ts="1461608863" xil_pn:in_ck="-186969913750481694" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5332843872647163841" xil_pn:start_ts="1461608862">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -229,6 +231,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PC.ngr"/>
       <outfile xil_pn:name="Procesador3.lso"/>
       <outfile xil_pn:name="Procesador3.ngc"/>
@@ -242,17 +246,15 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1461105060" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-2031030881512948758" xil_pn:start_ts="1461105060">
+    <transform xil_pn:end_ts="1461608853" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3160586661084083293" xil_pn:start_ts="1461608853">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1461105079" xil_pn:in_ck="5895103533939547992" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4597965501507975574" xil_pn:start_ts="1461105069">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
@@ -309,19 +311,12 @@
       <outfile xil_pn:name="Procesador.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1461105064" xil_pn:in_ck="5895103533939547992" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="-4368820408550123322" xil_pn:start_ts="1461105060">
+    <transform xil_pn:end_ts="1461608857" xil_pn:in_ck="-684908164456231005" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="2783187742879197337" xil_pn:start_ts="1461608853">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="netgen"/>
-      <outfile xil_pn:name="netgen/synthesis/Procesador_synthesis.nlf"/>
-      <outfile xil_pn:name="netgen/synthesis/Procesador_synthesis.v"/>
+      <outfile xil_pn:name="netgen/synthesis/Procesador3_synthesis.nlf"/>
+      <outfile xil_pn:name="netgen/synthesis/Procesador3_synthesis.v"/>
     </transform>
   </transforms>
 

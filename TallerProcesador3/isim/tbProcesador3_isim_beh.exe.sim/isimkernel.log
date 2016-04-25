@@ -2,14 +2,14 @@ Command line:
    tbProcesador3_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  51210
+     -socket  57668
 
-Sat Apr 23 22:13:44 2016
+Mon Apr 25 13:27:45 2016
 
 
- Elaboration Time: 0.156001 sec
+ Elaboration Time: 0.124801 sec
 
- Current Memory Usage: 1169.01 Meg
+ Current Memory Usage: 1169.03 Meg
 
  Total Signals          : 73
  Total Nets             : 3805
@@ -21,9 +21,9 @@ Sat Apr 23 22:13:44 2016
  Total Scalar Nets and Variables : 4307
 Total Line Count : 115
 
- Total Simulation Time: 0.187202 sec
+ Total Simulation Time: 0.124801 sec
 
- Current Memory Usage: 1169.01 Meg
+ Current Memory Usage: 1169.03 Meg
 
-Sat Apr 23 22:14:05 2016
+Mon Apr 25 13:27:52 2016
 
